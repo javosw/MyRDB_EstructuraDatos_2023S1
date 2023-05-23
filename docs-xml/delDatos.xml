@@ -1,0 +1,13 @@
+<raiz>
+    <libros>
+        <isbn>9781491904756</isbn>
+    </libros>
+    <libros>
+        <isbn>9781292402079</isbn>
+        <id-autor></id-autor>
+        <id-editorial/>
+    </libros>
+    <autores>
+        <id-autor>32427</id-autor>
+    </autores>
+</raiz>

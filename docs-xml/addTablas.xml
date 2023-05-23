@@ -1,0 +1,23 @@
+<raiz>
+    <estructura>
+        <tabla>editoriales</tabla>
+        <clave>id-editorial</clave>
+        <id-editorial>int</id-editorial>
+        <editorial-nombre>String</editorial-nombre>
+        <editorial-url>String</editorial-url>
+    </estructura>
+    <estructura>
+        <tabla>autores</tabla>
+        <clave>id-autor</clave>
+        <id-autor>int</id-autor>
+        <autor-nombre>String</autor-nombre>
+    </estructura>
+    <estructura>
+        <tabla>libros</tabla>
+        <clave>isbn</clave>
+        <isbn>long</isbn>
+        <libro-titulo>String</libro-titulo>
+        <id-autor>int</id-autor><autores/>
+        <id-editorial>int</id-editorial><editoriales/>
+    </estructura>
+</raiz>
