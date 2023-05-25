@@ -18,6 +18,7 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.collections.ObservableList;
 import javafx.scene.image.Image;
@@ -85,6 +86,7 @@ public class InterfazAmigable extends Application
         Button b23_DelValor = new Button("ELIMINAR UN DATO");
         Button b24_DelTupla = new Button("ELIMINAR UNA TUPLA");
         Button b25_CargarXML = new Button("CARGAR DATOS CON XML");
+        Button bAyuda = new Button("AYUDA");
 
         b11_ShowValores.setMaxWidth(Double.MAX_VALUE);
         b12_ShowDiagrama.setMaxWidth(Double.MAX_VALUE);
@@ -99,6 +101,7 @@ public class InterfazAmigable extends Application
         b14_AddColumna.setMaxWidth(Double.MAX_VALUE);
         b15_SetLlavePrimaria.setMaxWidth(Double.MAX_VALUE);
         b16_AddRelacion.setMaxWidth(Double.MAX_VALUE);
+        bAyuda.setMaxWidth(Double.MAX_VALUE);
 
         b11_ShowValores.setOnAction((e) -> {abrirOpenTabla();});
         b12_ShowDiagrama.setOnAction((e) -> { try{abrirShowDiagrama();} catch(Exception x){} });
@@ -113,6 +116,7 @@ public class InterfazAmigable extends Application
         b14_AddColumna.setOnAction((e) -> {abrirAddColumna();});
         b15_SetLlavePrimaria.setOnAction((e) -> {abrirSetLlavePrimaria();});
         b16_AddRelacion.setOnAction((e) -> {abrirAddRelacion();});
+        bAyuda.setOnAction((e) -> {abrirAyuda();});
 
         int colum_width = 200;
 
@@ -123,7 +127,7 @@ public class InterfazAmigable extends Application
         
         VBox v2 = new VBox();//v2.setMaxWidth(Double.MAX_VALUE);
         v2.setSpacing(6);
-        v2.getChildren().addAll(b21_AddLlave,b22_AddValor,b23_DelValor,b24_DelTupla,b25_CargarXML);
+        v2.getChildren().addAll(b21_AddLlave,b22_AddValor,b23_DelValor,b24_DelTupla,b25_CargarXML,bAyuda);
         v2.setMinWidth(colum_width);
         
         HBox h1 = new HBox();//h1.setMaxWidth(Double.MAX_VALUE);
@@ -640,6 +644,54 @@ public class InterfazAmigable extends Application
         Image graph = new Image(Utilidades.getUbicacionDeGrafico());
         ImageView ivGraph = new ImageView(graph);
         HBox h1 = new HBox(ivGraph);
+
+        sc_show_diagrama = new Scene(h1);
+
+        Stage stage = new Stage();
+        stage.setTitle("Diagrama ER");
+
+        stage.setScene(sc_show_diagrama);
+        stage.sizeToScene();
+
+        stage.show();
+    }
+
+    private void abrirAyuda()
+    {
+        String ayuda = "Las operaciones en la Base de Datos deben seguir el orden:\n" + 
+        "1- agregar Tabla\n" + 
+        "2- agregar Columna\n" + 
+        "3- fijar Llave Primaria de Tabla\n" + 
+        "4- crear una Relacion (opcional)\n" + 
+        "5- agregar una Llave\n" + 
+        "6- agregar Dato\n" + 
+        "7- quitar Dato \n" + 
+        "8- quitar Tupla\n\n" +
+        
+        "Lo anterior tambien aplica cuando se quiere cargar operaciones con documentos XML.\n" + 
+        
+        "Sintaxis para agregar tablas:\n" + 
+        "<estructura> <!-- [0,...] veces -->\n" + 
+        "    <tabla> _NombreTabla_ </tabla>\n" + 
+        "    <clave> _NombreColumna_ </clave>\n" + 
+        "    <_Columna_> _TipoDato_ </_Columna_> <!-- <_Relacion_> --> <!-- [0,...] veces -->\n" + 
+        "</estructura>\n\n" + 
+        
+        "Sintaxis para agregar columnas:\n" + 
+        "<_Tabla_> <!-- [0,...] veces -->\n" + 
+        "	<_ColumnaID_> _llave_ </_ColumnaID_>\n" + 
+        "	<_Columna_> _valor_ </_Columna_> <!-- [0,...] veces -->\n" + 
+        "</_Tabla_>\n\n" + 
+        
+        "Sintaxis para quitar tuplas:\n" + 
+        "<_Tabla_> <!-- [0,...] veces -->\n" + 
+        "	<_ColumnaID_> _llave_ </_ColumnaID_>\n" + 
+        "</_Tabla_>\n";
+        
+        
+        TextArea aAyuda = new TextArea(ayuda);
+        
+        HBox h1 = new HBox(aAyuda);
 
         sc_show_diagrama = new Scene(h1);
 
