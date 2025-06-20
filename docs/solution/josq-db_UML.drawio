@@ -1,0 +1,142 @@
+<mxfile host="Electron" modified="2023-05-22T23:21:12.101Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="XVZ5cSgLbTvm2ndKLUw8" version="21.2.1" type="device">
+  <diagram name="Page-1" id="sXJwNyYHzKKXpoFQl-ai">
+    <mxGraphModel dx="642" dy="1453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-1" value="&lt;i style=&quot;font-size: 14px;&quot;&gt;Nodo &amp;lt;_Llave_ extends Comparable&amp;lt;_Llave_&amp;gt;&amp;gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Lora;" parent="1" vertex="1">
+          <mxGeometry x="507" y="-560" width="320" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-15" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;# Nodo()&lt;div style=&quot;font-size: 14px;&quot;&gt;- llaves: Object[]&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- numerDeLlaves: int&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- ancestro: Nodo &amp;lt;_Llave_&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- izquierdo: Nodo &amp;lt;_Llave_&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- derecho: Nodo &amp;lt;_Llave_&amp;gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Lora;" parent="Nzwx3QYobn4wK2VRo7hW-1" vertex="1">
+          <mxGeometry y="26" width="320" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=14;fontFamily=Lora;" parent="Nzwx3QYobn4wK2VRo7hW-1" vertex="1">
+          <mxGeometry y="140" width="320" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-4" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;+ dealCarencia(): Nodo&amp;lt;_Llave_&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ dealExceso(): Nodo&amp;lt;_Llave_&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ getLlave(indice: int): _Llave_&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ setLlave(indice: int,llave: _Llave_): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ getNumeroDeLlaves(): int&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ &lt;i style=&quot;font-size: 14px;&quot;&gt;getPosicionDeLlave(llave: _Llave_): int&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ hasCarencia(): boolean&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ hasExceso(): boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Lora;" parent="Nzwx3QYobn4wK2VRo7hW-1" vertex="1">
+          <mxGeometry y="148" width="320" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-5" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;NodoHoja &amp;lt;_Llave_ extends Comparable&amp;lt;_Llave_&amp;gt;,_Valor_&amp;gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Lora;" parent="1" vertex="1">
+          <mxGeometry y="-430" width="430" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-6" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ NodoHoja()&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# ORDEN: int&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- valores: Object[]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Lora;" parent="Nzwx3QYobn4wK2VRo7hW-5" vertex="1">
+          <mxGeometry y="26" width="430" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=14;fontFamily=Lora;" parent="Nzwx3QYobn4wK2VRo7hW-5" vertex="1">
+          <mxGeometry y="90" width="430" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-8" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;- deleteEnPosicion(indice: int): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ getPosicionDeLlave(llave: _Llave_): int&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ getValor(indice: int): _Valor_&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ setValor(indice: int,valor: _Valor_): void&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- addEntrada(indice: int,llave: _Llave_,valor: _Valor_): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ addLlave(llave: _Llave_, valor: _Valor_): void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Lora;" parent="Nzwx3QYobn4wK2VRo7hW-5" vertex="1">
+          <mxGeometry y="98" width="430" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-9" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;NodoRama&amp;lt;_Llave_ extends Comparable&amp;lt;_Llave_&amp;gt;&amp;gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Lora;" parent="1" vertex="1">
+          <mxGeometry x="237" y="-210" width="590" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-10" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;+ NodoRama()&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# ORDEN: int&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# hijos: Object[]&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Lora;" parent="Nzwx3QYobn4wK2VRo7hW-9" vertex="1">
+          <mxGeometry y="26" width="590" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontSize=14;fontFamily=Lora;" parent="Nzwx3QYobn4wK2VRo7hW-9" vertex="1">
+          <mxGeometry y="90" width="590" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Nzwx3QYobn4wK2VRo7hW-12" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;- deleteEn(indice: int): void&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ getHijo(indice: int): Nodo&amp;lt;_Llave_&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ getPosicionDeLlave(llave: _Llave_): int&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- addEn(indice: int,llave: _Llave_,hijoIzq: Nodo&amp;lt;_Llave_&amp;gt;,hijoDer: Nodo&amp;lt;_Llave_&amp;gt;): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ setHijo(indice: int, hijo: Nodo&amp;lt;_Llave_&amp;gt;): void&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Lora;" parent="Nzwx3QYobn4wK2VRo7hW-9" vertex="1">
+          <mxGeometry y="98" width="590" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-11" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lora;fontSize=14;" parent="1" source="Nzwx3QYobn4wK2VRo7hW-5" target="Nzwx3QYobn4wK2VRo7hW-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="-470" as="sourcePoint" />
+            <mxPoint x="530" y="-470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-12" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;fontFamily=Lora;fontSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Nzwx3QYobn4wK2VRo7hW-9" target="Nzwx3QYobn4wK2VRo7hW-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="539" y="-310" as="sourcePoint" />
+            <mxPoint x="330" y="-423" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-13" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;ArbolBp&amp;lt;_Llave_ extends Comparable&amp;lt;_Llave_&amp;gt;, _Valor_&amp;gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry y="-584" width="420" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-14" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;- raiz: Nodo&amp;lt;_Llave_&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-13" vertex="1">
+          <mxGeometry y="26" width="420" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-13" vertex="1">
+          <mxGeometry y="50" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-16" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;- setEntrada(llave: _Llave_,valor: _Valor_): void&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ deleteEntrada(llave: _Llave_): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- getHoja(llave: _Llave_): NodoHoja&amp;lt;_Llave_,_Valor_&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ getValor(llave: _Llave_): _Valor_&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-13" vertex="1">
+          <mxGeometry y="58" width="420" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-17" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontFamily=Lora;fontSize=14;entryX=1.002;entryY=0.254;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Nzwx3QYobn4wK2VRo7hW-1" target="Z57WW2mrveeS0sEF9R0g-16" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="-110" as="sourcePoint" />
+            <mxPoint x="480" y="-110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-18" value="Columna" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="40" y="-815" width="340" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-19" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;# Columna(nombre: String,tipo: TiposAutorizados)&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- datos: ArbolBp&amp;lt;String,String&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- tipo: TiposAutorizados&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- nombre: String&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-18" vertex="1">
+          <mxGeometry y="26" width="340" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-18" vertex="1">
+          <mxGeometry y="100" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-21" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;# deleteDato(llave: String): void&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# setDato(llave: String,valor: String): void&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# getDato(llave: String): void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-18" vertex="1">
+          <mxGeometry y="108" width="340" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-22" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontFamily=Lora;fontSize=14;" parent="1" source="Z57WW2mrveeS0sEF9R0g-13" target="Z57WW2mrveeS0sEF9R0g-18" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="-948" as="sourcePoint" />
+            <mxPoint x="340" y="-1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-23" value="Tabla" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="437" y="-860" width="390" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-24" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;Tabla(nombre: String)&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- nombre: String&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- columnas: ArbolBp&amp;lt;String,Columna&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- llavePrimaria: Columna&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- relaciones: ArbolBp&amp;lt;String,Columna&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-23" vertex="1">
+          <mxGeometry y="26" width="390" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-23" vertex="1">
+          <mxGeometry y="120" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-26" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;# addColumna(columna: String,tipo: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# addLlave(llave: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# deleteLlave(llave: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# deleteTupla(llave: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# deleteValor(llave: String, columna: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# getCadenaGraphviz(): StringBuilder&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;# setDato(llave: String,columna: String,valor: String): void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-23" vertex="1">
+          <mxGeometry y="128" width="390" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-27" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontFamily=Lora;fontSize=14;" parent="1" source="Z57WW2mrveeS0sEF9R0g-13" target="Z57WW2mrveeS0sEF9R0g-23" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="430" y="-660" as="sourcePoint" />
+            <mxPoint x="430" y="-732" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-28" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;MiBD&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry y="-1140" width="470" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-29" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;+ MiBD(nombre: String)&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- tablas: ArbolBp&amp;lt;String,Tabla&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;- nombre: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-28" vertex="1">
+          <mxGeometry y="26" width="470" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-28" vertex="1">
+          <mxGeometry y="90" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-31" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;+ addTabla(tabla: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ setLlavePrimaria(tabla: String,columna: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ setRelacion(tabla: String,columna: String, relacion: String): void&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ addColumna(tabla: String,columna: String,tipo: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ addLlave(tabla: String,llave: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ setDato(tabla: String,llave: String,columna: String,valor: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ deleteDato(tabla: String,llave: String,columna: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ deleteLlave(tabla: String,llave: String): void&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;+ getCadenaGraphviz(): StringBuilder&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Lora;fontSize=14;" parent="Z57WW2mrveeS0sEF9R0g-28" vertex="1">
+          <mxGeometry y="98" width="470" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-32" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontFamily=Lora;fontSize=14;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Z57WW2mrveeS0sEF9R0g-23" target="Z57WW2mrveeS0sEF9R0g-31" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="382" y="-860" as="sourcePoint" />
+            <mxPoint x="306" y="-960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-33" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontFamily=Lora;fontSize=14;" parent="1" source="Z57WW2mrveeS0sEF9R0g-23" target="Z57WW2mrveeS0sEF9R0g-18" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="-1070" as="sourcePoint" />
+            <mxPoint x="600" y="-1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57WW2mrveeS0sEF9R0g-34" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontFamily=Lora;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Z57WW2mrveeS0sEF9R0g-31" target="Z57WW2mrveeS0sEF9R0g-23" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="600" y="-1049" as="sourcePoint" />
+            <mxPoint x="390" y="-1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

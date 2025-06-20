@@ -1,0 +1,99 @@
+abstract Nodo <_Llave_ extends Comparable<_Llave_> >
+# Nodo()
+
+- llaves: Object[] 
+- numerDeLlaves: int 
+- ancestro: Nodo <_Llave_>
+- izquierdo: Nodo <_Llave_>
+- derecho: Nodo <_Llave_>
+
++ dealCarencia(): Nodo<_Llave_>
++ dealExceso(): Nodo<_Llave_>
++ getLlave(indice: int): _Llave_
++ setLlave(indice: int,llave: _Llave_): void
++ getNumeroDeLlaves(): int 
++ abstract getPosicionDeLlave(llave: _Llave_): int
++ hasCarencia(): boolean
++ hasExceso(): boolean
+
+NodoHoja <_Llave_ extends Comparable<_Llave_>,_Valor_> extends Nodo <_Llave_>
+
++ NodoHoja()
+
+# ORDEN: int 
+- valores: Object[]
+
+- deleteEnPosicion(indice: int): void
++ getPosicionDeLlave(llave: _Llave_): int
++ getValor(indice: int): _Valor_
++ setValor(indice: int,valor: _Valor_): void 
+- addEntrada(indice: int,llave: _Llave_,valor: _Valor_): void
++ addLlave(llave: _Llave_, valor: _Valor_): void
+
+NodoRama<_Llave_ extends Comparable<_Llave_>> extends Nodo<_Llave_> 
++ NodoRama()
+
+# ORDEN: int
+# hijos: Object[]
+
+- deleteEn(indice: int): void 
++ getHijo(indice: int): Nodo<_Llave_>
++ getPosicionDeLlave(llave: _Llave_): int 
+- addEn(indice: int,llave: _Llave_,hijoIzq: Nodo<_Llave_>,hijoDer: Nodo<_Llave_>): void
++ setHijo(indice: int, hijo: Nodo<_Llave_>): void 
+
+ArbolBp<_Llave_ extends Comparable<_Llave_>, _Valor_> 
++ ArbolBp()
+- raiz: Nodo<_Llave_>
+- setEntrada(llave: _Llave_,valor: _Valor_): void 
++ deleteEntrada(llave: _Llave_): void
+- getHoja(llave: _Llave_): NodoHoja<_Llave_,_Valor_>
++ getValor(llave: _Llave_): _Valor_
+
+Columna
+# Columna(nombre: String,tipo: TiposAutorizados)
+
+- datos: ArbolBp<String,String>
+- tipo: TiposAutorizados
+- nombre: String
+
+# deleteDato(llave: String): void 
+# setDato(llave: String,valor: String): void 
+# getDato(llave: String): void
+
+Tabla
+
+Tabla(nombre: String)
+
+- nombre: String
+- columnas: ArbolBp<String,Columna>
+- llavePrimaria: Columna
+- relaciones: ArbolBp<String,Columna>
+
+# addColumna(columna: String,tipo: String): void
+# addLlave(llave: String): void
+# deleteLlave(llave: String): void
+# deleteTupla(llave: String): void
+# deleteValor(llave: String, columna: String): void
+# getCadenaGraphviz(): StringBuilder
+# setDato(llave: String,columna: String,valor: String): void
+
+MiBD
++ MiBD(nombre: String)
+
+- tablas: ArbolBp<String,Tabla>
+- nombre: String
+
++ addTabla(tabla: String): void
++ setLlavePrimaria(tabla: String,columna: String): void
++ setRelacion(tabla: String,columna: String, relacion: String): void 
++ addColumna(tabla: String,columna: String,tipo: String): void
++ addLlave(tabla: String,llave: String): void
++ setDato(tabla: String,llave: String,columna: String,valor: String): void
++ deleteDato(tabla: String,llave: String,columna: String): void
++ deleteLlave(tabla: String,llave: String): void
++ getCadenaGraphviz(): StringBuilder
+
+
+
+

@@ -1,0 +1,74 @@
+El objetivo de la clase Interacciones es verificar los valores ingresados por el usuario:
+	valores null o incorrectos como una cadena vacia
+
+Interacciones: 
+MiBD: addTabla(String tabla)
+	- 
+Interacciones.addColumna(String tabla,String columna,String tipo)
+	MiBD.addColumna(String tabla,String columna,String tipo)
+		Tabla MiBD.getTabla(String tabla)
+		if (Tabla == null) return;
+		Tabla.addColumna(String columna,String tipo)
+
+Interacciones.setRelacion(String tabla,String columna,String relacion) //
+	MiBD.setRelacion(String tabla,String columna,String relacion)
+		Tabla_1 MiBD.getTabla(String tabla)
+		if (Tabla_1 == null) return;
+		Tabla_2 MiBD.getTabla(String relacion) 
+		if (Tabla_2 == null) return;
+		Columna_1 Tabla_1.getColumna(String columna)
+		if (Columna_1 == null) return;
+		Columna_2 Tabla_2.getLlavePrimaria()
+		if (Columna_2 == null) return;
+		Tabla_1.setRelacion(String columna,Columna_2)
+		
+
+Interacciones.setLlavePrimaria(String tabla,String columna)
+	MiBD.setLlavePrimaria(String tabla,String columna):
+		Tabla_1 MiBD.getTabla(String tabla)
+		if (Tabla_1 == null) return;
+		Columna_1 Tabla_1.getColumna(String columna)
+		if (Columna_1 == null) return;
+		Tabla_1.setLlavePrimaria(Columna_1)
+		Tabla_1.deleteColumna(String columna)
+
+Interacciones.addLlave(String tabla,String llave)
+	MiBD.addLlave(String tabla,String llave)
+		Tabla_1 MiBD.getTabla(String tabla)
+		if (Tabla_1 == null) return;
+		Tabla_1.addLlave(String llave)
+
+Interacciones.setValor(String tabla,String llave,String columna,String valor)
+	Tabla MiBD.getTabla(String tabla)
+	Tabla.setValor(String llave,String columna,String valor):
+		String_1 Tabla.getLlave(String llave)
+		if(String_1 == null) return;
+		Columna_1 Tabla.getColumna(String columna) // columnas que no sean llave primaria
+		if(Columna_1 == null) return;
+		Columna_2 Tabla.getRelacion(String columna) // Columna_2 es la llave_primaria de la relacion 
+		if (Columna_2 != null): 
+			String_2 Columna_2.getValor(String valor) // el valor propuesto debe ser una llave en la relacion 
+			if (String_2 == null): return // la llave no existe en identificadores
+		Columna_1.setValor(String llave,String valor)
+			Columna_1.checkValor(Tipo columna,String valor)
+
+Interacciones.deleteValor(String tabla,String llave,String columna)
+	MiBD.deleteValor(String tabla,String llave,String columna)
+		Tabla MiBD.getTabla(String tabla)
+		if (Tabla == null) return;
+		String_1 Tabla.getLlave(String llave)
+		if(String_1 == null) return;
+		Columna_1 Tabla.getColumna(String columna)
+		if(Columna_1 == null) return;
+		Columna_1.deleteValor(String llave)
+
+
+NOTA: en todas las clases en donde hayan ArbolBp se debe verificar que la llave no sea null (o similar)
+	los metodos con posibles llaves null son:
+	getValor(String llave)
+	setValor(String llave)
+	para establecer una relacion se debe verificar que el tipo y nombre de la relacion con la columna sea el mismo 
+relaciones = ArbolBp<String columna,Columna relacion>
+
+Columna MiBD.getRelacion(String tabla,String columna) =/= Columna MiBD.getLlavePrimaria(String tabla)
+
