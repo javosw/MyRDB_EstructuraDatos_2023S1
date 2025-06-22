@@ -658,7 +658,7 @@ public class InterfazAmigable extends Application
 
     private void abrirAyuda()
     {
-        String ayuda = "Las operaciones en la Base de Datos deben seguir el orden:\n" + 
+        String sAyuda = "Las operaciones en la Base de Datos deben seguir el orden:\n" + 
         "1- agregar Tabla\n" + 
         "2- agregar Columna\n" + 
         "3- fijar Llave Primaria de Tabla\n" + 
@@ -668,7 +668,7 @@ public class InterfazAmigable extends Application
         "7- quitar Dato \n" + 
         "8- quitar Tupla\n\n" +
         
-        "Lo anterior tambien aplica cuando se quiere cargar operaciones con documentos XML.\n" + 
+        "Lo anterior tambien aplica para realizar operaciones con documentos XML.\n" + 
         
         "Sintaxis para agregar tablas:\n" + 
         "<estructura> <!-- [0,...] veces -->\n" + 
@@ -688,15 +688,14 @@ public class InterfazAmigable extends Application
         "	<_ColumnaID_> _llave_ </_ColumnaID_>\n" + 
         "</_Tabla_>\n";
         
-        
-        TextArea aAyuda = new TextArea(ayuda);
+        TextArea aAyuda = new TextArea(sAyuda);
         
         HBox h1 = new HBox(aAyuda);
 
         sc_show_diagrama = new Scene(h1);
 
         Stage stage = new Stage();
-        stage.setTitle("Diagrama ER");
+        stage.setTitle("Ayuda");
 
         stage.setScene(sc_show_diagrama);
         stage.sizeToScene();

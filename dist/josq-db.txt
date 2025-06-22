@@ -1,0 +1,21 @@
+graph
+{
+layout=neato
+graph [pad="0.1"];
+"josq-db" [shape=cylinder,style=filled,fillcolor="cyan"]
+"autores" [shape=box,style=filled]
+"editoriales" [shape=box,style=filled]
+"libros" [shape=box,style=filled]
+"josq-db"--"autores"
+"josq-db"--"editoriales"
+"josq-db"--"libros"
+"autores"--"id-autor"
+"autores"--"autor-nombre"
+"editoriales"--"id-editorial"
+"editoriales"--"editorial-nombre"
+"editoriales"--"editorial-url"
+"libros"--"isbn"
+"libros"--"id-autor"
+"libros"--"id-editorial"
+"libros"--"libro-titulo"
+}
